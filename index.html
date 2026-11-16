@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CopyLaTeX documentation for Firefox and Chrome.">
+  <title>CopyLaTeX</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>CopyLaTeX</h1>
+    <p>Copy LaTeX code from equations on websites that use KaTeX or MathJax. It also works with math images on Wikipedia and Wikiwand.</p>
+    <p><a href="https://addons.mozilla.org/en-US/firefox/addon/copy-latex">Firefox Add-on</a> · <a href="https://chromewebstore.google.com/detail/copy-latex-katex-mathjax/lmhdbdfaadjfjclobmodomehekpjpkgn">Chrome Web Store</a></p>
+
+    <h2>How to use</h2>
+    <p>Hover over an equation and click <code>Click to copy</code>. Paste the LaTeX where you need it.</p>
+    <p>Select text that includes equations, right-click, and choose <code>Copy as Markdown</code>. Choose LaTeX or Typst in the extension popup.</p>
+    <p>In the popup there are other preferences. For example you can choose the extension's theme, disable the hover overlay (and copy equations via right click) or override Ctrl+C/Cmd+C to copy the selection.</p>
+
+    <h2>Examples</h2>
+    <h3>KaTeX</h3>
+    <img src="https://raw.githubusercontent.com/Mapaor/copy-latex-firefox-extension/main/assets/gif-demo-katex.gif" alt="Copy a KaTeX equation">
+    <h3>MathJax</h3>
+    <img src="https://raw.githubusercontent.com/Mapaor/copy-latex-firefox-extension/main/assets/gif-demo-mathjax.gif" alt="Copy a MathJax equation">
+    <h3>Wikipedia math images</h3>
+    <img src="https://raw.githubusercontent.com/Mapaor/copy-latex-firefox-extension/main/assets/gif-demo-wikipedia.gif" alt="Copy a Wikipedia math image">
+    <h3>Copy a selection as Markdown</h3>
+    <img src="https://raw.githubusercontent.com/Mapaor/copy-latex-firefox-extension/main/assets/gif-demo-copy-as-markdown.gif" alt="Copy selected text and equations as Markdown">
+    <h3>Copy as Typst</h3>
+    <img src="https://raw.githubusercontent.com/Mapaor/copy-latex-firefox-extension/main/assets/gif-demo-copy-as-typst.gif" alt="Copy an equation as Typst">
+
+    <h2>Firefox</h2>
+    <p>Install from <a href="https://addons.mozilla.org/en-US/firefox/addon/copy-latex">Firefox Add-ons</a>.</p>
+    <p>To load it locally, open <code>about:debugging</code>, select <code>This Firefox</code>, then <code>Load Temporary Add-on</code>. Choose the extension's <code>manifest.json</code>.</p>
+    <p>Manage site access in Firefox Settings → Extensions &amp; Themes → CopyLaTeX → Permissions and Data.</p>
+    <p><a href="https://github.com/Mapaor/copy-latex-firefox-extension">Firefox source code</a></p>
+
+    <h2>Chrome</h2>
+    <p>Install from the <a href="https://chromewebstore.google.com/detail/copy-latex-katex-mathjax/lmhdbdfaadjfjclobmodomehekpjpkgn">Chrome Web Store</a>.</p>
+    <p>To load it locally, open <code>chrome://extensions</code>, turn on Developer mode, select <code>Load unpacked</code>, then choose the <code>src</code> folder.</p>
+    <p>Manage site access at <code>chrome://extensions</code> → CopyLaTeX → Details.</p>
+    <p>Chrome extensions also work in Brave and Arc.</p>
+    <p><a href="https://github.com/Mapaor/copy-latex-chrome-extension">Chrome source code</a></p>
+    <h2>Upcoming features</h2>
+    <p>Custom delimiters (`$`, `\(`, `$$`, `\[`, ...), custom translations (Click to copy -> Haz clic para copiar) and custom markdown formatting options (display equations spacing and unordered list marker).</p>
+    <h2>Contributing</h2>
+    <p>Open an issue or a pull request to either one of the repositories (<a href="https://github.com/Mapaor/copy-latex-firefox-extension">copy-latex-firefox-extension</a> or <a href="https://github.com/Mapaor/copy-latex-chrome-extension">copy-latex-chrome-extension</a>), preferably to the firefox one.</p>
+    <p>You can also contact me by email at <code>pardo.marti@gmail.com</code>.</p>
+  </main>
+  <script>
+    document.querySelectorAll('img').forEach((image) => {
+      image.loading = 'lazy';
+    });
+  </script>
+</body>
+</html>
